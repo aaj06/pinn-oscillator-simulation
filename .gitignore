@@ -6,6 +6,23 @@ __pycache__/
 # C extensions
 *.so
 
+# ==============================================================================
+# PINN & Deep Learning Specific Ignores
+# ==============================================================================
+
+# Ignore saved neural network weights and training checkpoints
+*.h5
+*.pth
+*.pt
+*.ckpt
+checkpoint/
+saved_models/
+
+# Ignore generated training plots, loss curves, and animation videos
+plots/
+*.png
+*.jpg
+*.mp4
 # Distribution / packaging
 .Python
 build/
