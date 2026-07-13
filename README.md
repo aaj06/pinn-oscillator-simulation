@@ -15,25 +15,33 @@ m \frac{d^2 u}{dt^2} + \mu \frac{du}{dt} + k u = 0
 $$ 
 
 2. Normalized form
+   
 $$
+\begin{equation}
 u'' + 2\delta u' + \omega_0^2 u = 0
+\end{equation}
 $$
-, where 
+
+where 
+
 $$
 \delta = \frac{\mu}{2m}, \quad \omega_0 = \sqrt{\frac{k}{m}}
 $$
 
 ## Initial Conditions
 
+$$
 \begin{equation}
 u(0) = 1, \qquad \frac{du}{dt}(0) = 0
 \end{equation}
-
+$$
 ## Exact (Analytical) Solution
 
+$$
 \begin{equation}
 u(t) = e^{-\delta t}\left( 2A \cos(\phi + \omega t) \right)
-
+\end{equation}
+$$
 ## Intial Conditions
 
 $$
@@ -47,12 +55,13 @@ $$
 - Fully supervised learning
 
 ## Case 2
-- Trained on t in [0,0.75]
-- Expected extrapolation error for t > 0.75
+- Trained on t in [0,0.25]
+- Expected extrapolation error for t > 0.25
 
 ## Case 3
 - No training data
-Loss: 
+Loss:
+
 $$
 \mathcal{L} = \frac{1}{N} \sum (m u'' + \mu u' + k u)^2
 $$
